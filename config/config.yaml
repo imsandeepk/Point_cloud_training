@@ -1,0 +1,17 @@
+dataset_train:
+  point_cloud_dir: "/Users/sandeep/DOCS/Point Cloud Training/data/train/point_clouds"
+  label_dir: "/Users/sandeep/DOCS/Point Cloud Training/data/train/labels"
+  num_points: 6000
+  batch_size: 4
+  shuffle: true
+
+training:
+  learning_rate: 0.01
+  num_epochs: 20
+  optimizer: "adam"
+  log_interval: 10  # Log every 10 batches
+  checkpoint_dir: "/Users/sandeep/DOCS/Point Cloud Training/checkpoints"
+
+model:
+  num_classes: 2
+  
