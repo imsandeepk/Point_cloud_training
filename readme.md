@@ -37,22 +37,10 @@ Point_cloud_training/
 Downloading the Data
 The dataset contains 3D point clouds of dental scans with segmentation labels. To download the dataset:
 
-Direct download:
-
-Access the dataset from Google Drive
-Download the ZIP file and extract it to the data/ directory in your project folder
-
-
-Using gdown (alternative method):
-bash# Install gdown if not already installed
-pip install gdown
-
 # Download the dataset
 gdown https://drive.google.com/uc?id=11i8_rGIQIeJx_M8pasNFVQjx7T0SZOlD
 
-# Create data directory and extract the dataset
-mkdir -p data
-unzip dental_point_cloud_dataset.zip -d data/
+
 
 
 
