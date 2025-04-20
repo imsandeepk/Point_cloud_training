@@ -31,37 +31,9 @@ Point_cloud_training/
 ├── requirements.txt                 # Dependencies
 └── README.md                        # This file
 ```
-Dental Scan Segmentation using PointNet
-This repository contains an implementation of PointNet for segmenting dental scans into gums and teeth. The model takes 3D point cloud data as input and produces pointwise segmentation labels.
-Overview
-This project uses PointNet architecture to segment 3D point clouds of dental scans. The model identifies each point as either tooth or gum tissue, enabling automatic segmentation of dental structures.
-Features
 
-PointNet-based semantic segmentation
-Support for 3D point cloud processing
-Training and evaluation scripts
-Pre-trained model checkpoints
-Inference script for segmenting new dental scans
+## Installation
 
-Project Structure
-Point_cloud_training/
-├── model/
-│   └── pointnet_segmentation.py     # PointNet model implementation
-├── utils/
-│   ├── data_loader                  # Data loading and preprocessing
-│   └── train.py                     # Training utilities
-├── inference/                       # Inference script for new point clouds
-│   └── infer.py                     # Main inference script
-├── checkpoints/                     # Saved model checkpoints
-│   └── best_model.pth               # Pre-trained model
-├── config/
-│   └── config.yaml                  # Configuration files
-├── data/                            # Dataset directory (after downloading)
-│   ├── train/                       # Training data
-│   └── test/                        # Test data
-├── requirements.txt                 # Dependencies
-└── README.md                        # This file
-Dataset
 Downloading the Data
 The dataset contains 3D point clouds of dental scans with segmentation labels. To download the dataset:
 
@@ -71,7 +43,18 @@ Access the dataset from Google Drive
 Download the ZIP file and extract it to the data/ directory in your project folder
 
 
-## Installation
+Using gdown (alternative method):
+bash# Install gdown if not already installed
+pip install gdown
+
+# Download the dataset
+gdown https://drive.google.com/uc?id=11i8_rGIQIeJx_M8pasNFVQjx7T0SZOlD
+
+# Create data directory and extract the dataset
+mkdir -p data
+unzip dental_point_cloud_dataset.zip -d data/
+
+
 
 ### Prerequisites
 
