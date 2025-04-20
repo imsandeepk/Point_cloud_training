@@ -142,5 +142,5 @@ The implemented PointNet architecture includes:
 
 ## Results
 
-The model achieves approximately 88.6% segmentation accuracy on our test dataset, with an IoU score of Y for teeth and Z for gums.
+The model achieves approximately 88.6% segmentation accuracy on our test dataset
 
